@@ -5,102 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ARIS HEALTH CARE</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f0fff4;
-      color: #333;
-    }
-    header {
-      background-color: #2e7d32;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-    }
-    header img {
-      width: 60px;
-      height: 60px;
-      margin-bottom: 0.5rem;
-    }
-    nav {
-      background: #1b5e20;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 0.5rem;
-      flex-wrap: wrap;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 2rem;
-    }
-    .services, .contact, .booking, .appointments, .dashboard, .admin {
-      background: white;
-      margin: 1rem auto;
-      padding: 1rem;
-      border-radius: 10px;
-      max-width: 800px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #2e7d32;
-    }
-    .service-list li {
-      margin-bottom: 0.5rem;
-    }
-    form input, form textarea, form select {
-      width: 100%;
-      padding: 0.75rem;
-      margin: 0.5rem 0;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-    form button {
-      background-color: #2e7d32;
-      color: white;
-      border: none;
-      padding: 0.75rem 1.5rem;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    .whatsapp-btn {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25D366;
-      color: white;
-      padding: 1rem;
-      border-radius: 50%;
-      font-size: 1.5rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
-      text-decoration: none;
-    }
-    .form-message {
-      text-align: center;
-      margin-top: 1rem;
-      font-weight: bold;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    th, td {
-      border: 1px solid #ccc;
-      padding: 8px;
-      text-align: left;
-    }
-    th {
-      background: #2e7d32;
-      color: white;
-    }
-  </style>
 </head>
 <body>
   <header>
@@ -119,39 +25,35 @@
     <a href="#admin">Admin Panel / व्यवस्थापक</a>
   </nav>
 
-  <section id="home">
-    <div class="services">
-      <h2>Welcome to ARIS HEALTH CARE<br>ARIS हेल्थ केयर में आपका स्वागत है</h2>
-      <p>We provide expert medical care services right at your home by trained professionals. Book now for fast and affordable care.<br><strong>हम आपके घर पर पेशेवरों द्वारा चिकित्सा सेवाएं प्रदान करते हैं। अब बुक करें – सुविधाजनक और किफायती सेवा।</strong></p>
-    </div>
+  <section id="home" class="box">
+    <h2>Welcome to ARIS HEALTH CARE<br>ARIS हेल्थ केयर में आपका स्वागत है</h2>
+    <p>We provide expert medical care services right at your home by trained professionals. Book now for fast and affordable care.<br><strong>हम आपके घर पर पेशेवरों द्वारा चिकित्सा सेवाएं प्रदान करते हैं। अब बुक करें – सुविधाजनक और किफायती सेवा।</strong></p>
   </section>
 
-  <section id="services">
-    <div class="services">
-      <h2>Our Home Care Services<br>हमारी होम केयर सेवाएं</h2>
-      <ul class="service-list">
-        <li>✔ IV Cannula Insertion / कैनुला लगाना</li>
-        <li>✔ Injection Administration (IM, IV, SC) / इंजेक्शन देना</li>
-        <li>✔ IV Fluids / Drip Setup / ड्रिप चढ़ाना</li>
-        <li>✔ Catheter Insertion / कैथेटर डालना</li>
-        <li>✔ Ryle's Tube Insertion / रायल्स ट्यूब डालना</li>
-        <li>✔ Feeding Assistance (NG Tube/PEG) / फीडिंग सहायता</li>
-        <li>✔ Trained Nursing Staff at Home / घर पर प्रशिक्षित नर्स</li>
-      </ul>
-    </div>
+  <section id="services" class="box">
+    <h2>Our Home Care Services<br>हमारी होम केयर सेवाएं</h2>
+    <ul>
+      <li>✔ IV Cannula Insertion / कैनुला लगाना</li>
+      <li>✔ Injection Administration / इंजेक्शन देना</li>
+      <li>✔ IV Drip / ड्रिप चढ़ाना</li>
+      <li>✔ Catheter Insertion / कैथेटर डालना</li>
+      <li>✔ Ryle's Tube Insertion / रायल्स ट्यूब डालना</li>
+      <li>✔ Feeding Support / फीडिंग सहायता</li>
+      <li>✔ Nursing Staff / नर्सिंग सेवा</li>
+    </ul>
   </section>
 
-  <section id="admin">
-    <div class="admin">
-      <h2>Admin Panel Login / व्यवस्थापक लॉगिन</h2>
-      <form id="admin-login-form">
-        <input type="text" placeholder="Username / उपयोगकर्ता नाम" required />
-        <input type="password" placeholder="Password / पासवर्ड" required />
-        <button type="submit">Login / लॉगिन करें</button>
-      </form>
-    </div>
+  <section id="admin" class="box">
+    <h2>Admin Login / व्यवस्थापक लॉगिन</h2>
+    <form id="admin-login-form">
+      <input type="text" placeholder="Username / उपयोगकर्ता नाम" required />
+      <input type="password" placeholder="Password / पासवर्ड" required />
+      <button type="submit">Login / लॉगिन करें</button>
+    </form>
   </section>
 
-  <!-- Booking, Apps Script, Dashboard, WhatsApp & PDF features next -->
+  <a href="https://wa.me/919773130795" class="whatsapp-btn" target="_blank">💬</a>
+
+  <script src="script.js"></script>
 </body>
 </html>

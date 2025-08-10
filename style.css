@@ -1,0 +1,62 @@
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0fff4;
+  color: #333;
+}
+header {
+  background-color: #2e7d32;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+header img {
+  width: 60px;
+  height: 60px;
+}
+nav {
+  background: #1b5e20;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0.5rem;
+  flex-wrap: wrap;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.box {
+  background: white;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: 800px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+form input, form button {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+form button {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+}
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 1rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
