@@ -1,62 +1,43 @@
 
 body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f0fff4;
-  color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #333;
 }
 header {
-  background-color: #2e7d32;
-  color: white;
-  padding: 1rem;
-  text-align: center;
+    background: #007B8F;
+    color: white;
+    padding: 15px 0;
 }
-header img {
-  width: 60px;
-  height: 60px;
-}
-nav {
-  background: #1b5e20;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  padding: 0.5rem;
-  flex-wrap: wrap;
+header .container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
 }
-.box {
-  background: white;
-  margin: 1rem auto;
-  padding: 1rem;
-  border-radius: 10px;
-  max-width: 800px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+nav a:hover {
+    text-decoration: underline;
 }
-form input, form button {
-  width: 100%;
-  padding: 0.75rem;
-  margin: 0.5rem 0;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+.hero {
+    background: url('https://images.unsplash.com/photo-1584515933487-779824d29309') no-repeat center center/cover;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
 }
-form button {
-  background-color: #2e7d32;
-  color: white;
-  border: none;
+.content {
+    padding: 40px 20px;
 }
-.whatsapp-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25D366;
-  color: white;
-  padding: 1rem;
-  border-radius: 50%;
-  font-size: 1.5rem;
-  text-decoration: none;
+footer {
+    background: #004D5E;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
